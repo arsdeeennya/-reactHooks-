@@ -1,9 +1,14 @@
 import React from "react"
 
-const Basic1 = () => {
+const Basic1 = (props) => {
+	const clickHandler = () =>{
+		console.log("クリックしたよ");
+	}
+	
 	return (
 		<React.Fragment>
-			こんにちふぁ
+			<button onClick={clickHandler}>ボタン</button>
+			{ props.name }
 		</React.Fragment>
 	)
 }
