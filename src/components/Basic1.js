@@ -5,7 +5,7 @@ const Basic1 = (props) => {
 	
 	return (
 		<React.Fragment>
-			<button onClick={() => setCount(count+1)}>カウント{count}</button>
+			<button onClick={() => {setCount(prevCount=>prevCount+1);setCount(prevCount=>prevCount+1);}}>カウント{count}</button>
 			{ props.name }
 		</React.Fragment>
 	)
