@@ -1,13 +1,11 @@
-import React from "react"
+import React, {useState} from "react"
 
 const Basic1 = (props) => {
-	const clickHandler = () =>{
-		console.log("クリックしたよ");
-	}
+	const [count, setCount] = useState(0)
 	
 	return (
 		<React.Fragment>
-			<button onClick={clickHandler}>ボタン</button>
+			<button onClick={() => setCount(count+1)}>カウント{count}</button>
 			{ props.name }
 		</React.Fragment>
 	)
