@@ -8,4 +8,4 @@ const Basic2 = () => {
 	)
 }
 
-export default Basic2
+export default Basic2;
