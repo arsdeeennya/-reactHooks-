@@ -6,8 +6,9 @@ import React, {useReducer} from 'react'
 // import ApiFetch from "./components/ApiFetch"
 import AppContext from "./contexts/AppContext"
 // import B from "./components/B"
-import CompB from "./components/CompB"
-import BasicReducer from "./components/BasicReducer"
+// import CompB from "./components/CompB"
+// import BasicReducer from "./components/BasicReducer"
+import Memo from "./components/Memo"
 
 const initialState = 0
 const reducer = (currentState, action) => {
@@ -29,8 +30,7 @@ function App() {
 		<AppContext.Provider value={{countProvided: count, dispatchProvided: dispatch}}>
 			<div className="App">
 				<header className="App-header">
-					Count{count}
-					<CompB/>
+					<Memo/>
 				</header>
 			</div>
 		</AppContext.Provider>
