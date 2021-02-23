@@ -10,11 +10,11 @@ const ApiFetch = () => {
 		.then(res =>{
 			setPosts(res.data)
 		})
-		fetch("https://jsonplaceholder.typicode.com/posts", {method: "GET"})
-		.then(res => res.json())
-		.then(data => {
-			setPosts(data)
-		})
+		// fetch("https://jsonplaceholder.typicode.com/posts", {method: "GET"})
+		// .then(res => res.json())
+		// .then(data => {
+		// 	setPosts(data)
+		// })
 	},[])
 	
 	return (
