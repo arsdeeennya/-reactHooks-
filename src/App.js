@@ -1,13 +1,14 @@
-import logo from './logo.svg'
 import './App.css'
 import React from 'react'
-import Basic1 from "./components/Basic1"
+// import Basic2 from "./components/Basic2"
+// import BasicUseEffect from "./components/BasicUseEffect"
+import TimerContainer from "./components/TimerContainer"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Basic1 name="hooks"/>
+        <TimerContainer/>
       </header>
     </div>
   );
