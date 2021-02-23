@@ -4,14 +4,18 @@ import React from 'react'
 // import BasicUseEffect from "./components/BasicUseEffect"
 // import TimerContainer from "./components/TimerContainer"
 import ApiFetch from "./components/ApiFetch"
+import AppContext from "./contexts/AppContext"
+import B from "./components/B"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ApiFetch/>
-      </header>
-    </div>
+	<AppContext.Provider value={"こんちわ"}>
+	    <div className="App">
+	      <header className="App-header">
+	        <B/>
+	      </header>
+	    </div>
+	</AppContext.Provider>
   );
 }
 
